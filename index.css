@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif; color: white;
+    display: grid;
+    margin: 0;
+
+    grid-template-rows: 83px 799px 663px 275px;
+    grid-template-areas:
+    "nav"
+    "sec1"
+    "sec2"
+    "footer";
+}
+.pages {
+    background-image: linear-gradient(white); background-size: 0% 3px; background-position: left bottom;
+    background-repeat: no-repeat; transition: background-size 0.3s ease-in-out;
+}
+#select {color: #70F548;}
+.pages:hover {background-size: 100% 3px;}
+a { text-decoration: none; color: white; margin: 0 10px 0 10px; font-size: 20px; }
+#ulogo {
+    display: flex;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    margin-left: 475px;
+    margin-right: 500px;
+}
+.header {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: nav;
+    background-color: #070707;
+}
+.sec1 {
+    padding-left: 52px; padding-top: 90px;
+    background-image: url(fundo.png);
+    grid-area: sec1;
+}
+.sec2 {
+    background-color: black;
+    grid-area: sec2;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background: #202020;
+    grid-area: footer;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+#loopfly {
+    width: 270px;
+    height: 100px;
+}
+.icons {
+    margin: 0 13px 0 13px;
+    width: 34px;
+    height: 33px;
+}
+.user { width: 27px; height: 33px;}
+h2 {
+    color: #3ed646;
+    font-size: 20px; font-weight: 400;
+}
+h1 {
+    line-height: 60px;
+    font-size: 48px;
+    font-weight: 800;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+span { color: #70F548;}
+p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #A9A9A9;
+    margin-bottom: 3vh;
+    line-height: 27px;
+}
+#faleconosco {
+    background-color:#34ce05; margin-left: 0px;
+    border: none; 
+    padding: 11px 43px;
+    color: black;
+    border-radius: 15px;
+    font-weight: 500; transition: background-color 0.3s ease;
+}
+#faleconosco:hover {
+    background-color: #000000; border: 2px solid #70F548;
+
+    span{
+        color: white;
+    }
+}
+.ajuste { position: relative; top: -10px; color: black;}
+#whats {
+    width: 40px; 
+}
+.botaoP {
+    display: flex;
+    margin-bottom: 70px;
+}
+#verservico {
+    padding: 11px 43px; border: 2px solid #70F548;
+    border-radius: 15px; transition: background-color 0.3s ease;
+}
+#verservico:hover {
+    background-color: #34ce05; border: none; color: black;
+}
+#setad { position: relative; top: 7px;}
+
+.stats-container {
+    max-width: 700px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.stat-box {
+    flex: 1;
+    padding: 0px 0px 0px 20px;
+    color: #fff;
+}
+.stat-box:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 7px;
+}
+.number {
+    font-size: 24px;
+    font-weight: medium;
+    margin-bottom: 5px;
+}
+.text {
+    font-size: 14px;  font-weight: 500; font-style: normal;
+    color: #B4B4B4;
+}
+
+
+.subtitulo {
+    font-size: 28px;
+    line-height: 30px;
+}
+.tituloNossos {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    height: 200px;
+}
+.nossosSevicos {
+    height: 463px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.serv {
+    display: flex; justify-content: center; align-items: center;
+}
+.formato {
+    width: 341px; height: 344px;
+    background: #0C0C0C;
+    border-radius: 20px; border: 2px solid #8a8a8a;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.imgserv {
+    height: 110px;
+    margin: 30px 0 20px 0;
+}
+.h1serv {
+    font-size: 26px; font-weight: 500; margin: 0;
+}
+.pserv {
+    font-size: 22px; text-align: center;
+}
+
+#logofooter {
+    width: 400px;
+    height: 150px;
+}
+.imglogo {
+    display: flex;
+    
+    align-items: center;
+}
+.lifooter {
+    font-size: 18px;
+}
+.titlefooter {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+}
+.sobrenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #B4B4B4;
+}
+.iconsSociais {
+    width: 156.31px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.redesSociais {
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contato {
+    color: #B4B4B4;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contato {
+    margin-left: -50px;
+}
+.iconfooter {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.iconfooterContato {
+    width: 20px;
+    height: 20px;
+}
+
